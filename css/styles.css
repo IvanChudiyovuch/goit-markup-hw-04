@@ -347,6 +347,30 @@ img {
   letter-spacing: 0.03em;
 }
 
+.customer-list {
+  display: flex;
+}
+
+.customer-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.customer-item:not(:last-child) {
+  margin-right: var(--card-list-gap);
+}
+
+.customer-link {
+  fill: #afb1b8;
+}
+.customer-link:hover {
+  fill: var(--accent-color);
+}
+
 /* секцыя работ */
 
 .section {

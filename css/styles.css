@@ -329,12 +329,38 @@ img {
 }
 
 .team-text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 
+.team-socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-socials-link {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: var(--accent-background-color);
+  fill: #ffffff;
+}
 /* секцыя клиенты */
 
 .customers-title {
@@ -351,23 +377,24 @@ img {
   display: flex;
 }
 
-.customer-item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 16px 32px;
-}
-
 .customer-item:not(:last-child) {
   margin-right: var(--card-list-gap);
 }
 
 .customer-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: #afb1b8;
 }
-.customer-link:hover {
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
@@ -481,7 +508,7 @@ img {
 }
 
 .address .link:hover,
-.link:focus {
+.address .link:focus {
   color: var(--accent-color);
 }
 
@@ -499,4 +526,39 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-socials-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-socials-list {
+  display: flex;
+}
+
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-socials-link {
+  width: 44px;
+  height: 44px;
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-background-color);
 }

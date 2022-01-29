@@ -34,6 +34,9 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
 img {
   display: block;
   max-width: 100%;
@@ -64,6 +67,7 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -125,17 +129,15 @@ img {
 }
 
 .link {
+  display: flex;
+  align-items: center;
   color: var(--secondary-color);
   text-decoration: none;
 }
 
 .link-icon {
   fill: currentColor;
-}
-
-.link-mail,
-.link-phone {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .header-item {
@@ -194,7 +196,7 @@ img {
     url('../imajes/heroImg.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-color: #c4c4c4;
 }
 
@@ -519,6 +521,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
@@ -555,6 +558,11 @@ img {
   color: #ffffff;
 }
 
+.footer-link-adress:hover,
+.footer-link-adress:focus {
+  color: var(--accent-color);
+}
+
 .footer-link {
   font-style: normal;
   font-size: 14px;
@@ -563,9 +571,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-socials {
-  padding-top: 15px;
-  padding-bottom: 17px;
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
 
 .footer-socials-title {
